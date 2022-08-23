@@ -3,7 +3,7 @@
 from schema import *
 
 # Task -1 (only once)
-# d.create_all()
+#d.create_all()
 
 # Task - 2 (only once)
 # # Ness1 = NessCapsules(capsule_id=1,capsule_name='Arondio',price=0.50,quantity=0.50)
@@ -27,7 +27,7 @@ from schema import *
 # c4 = CustomerAccounts(customer_id=104,customer_name='Fotis',paymethod=card,capsule_id=1)
 # d.session.add(c4)
 
-d.session.commit()
+#d.session.commit()
 
 # Task - 3 (multiple times)
 # for nes in NessCapsules.query.all():
