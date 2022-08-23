@@ -17,11 +17,11 @@ class TestBase(LiveServerTestCase):
         return app
 
     def setUp(self):
-        from application.models import Games
+        from app import NessCapsules
         db.create_all() # create schema before we try to get the page
 
-        test_game = Games(name = "Test")
-        db.session.add(test_game)
+        test_nessapp = NessCapsules(name = "Test")
+        db.session.add(test_nessapp)
         db.session.commit()
 
     def tearDown(self):
