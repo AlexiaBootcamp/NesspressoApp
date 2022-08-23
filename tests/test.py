@@ -3,7 +3,7 @@ from flask_testing import LiveServerTestCase
 from urllib.request import urlopen
 from flask import url_for
 
-from application import app, db
+from app import app, db
 class TestBase(LiveServerTestCase):
     TEST_PORT = 5050 # test port, doesn't need to be open
 
