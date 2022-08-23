@@ -8,13 +8,13 @@ from schema import *
 def root():
     return render_template('root.html')
 
-@application.route('/colleges')
-def college_list():
-    all_colleges = Colleges.query.all()
-    return render_template('all_colleges.html',list_of_names=all_colleges)
+@application.route('/NessCapsules')
+def capsule_list():
+    all_NessCapsules = NessCapsules.query.all()
+    return render_template('all_NessCapsules.html',list_of_capsules=all_NessCapsules)
 
-@application.route('/college/<int:id>')
-def programs(id):
-    program_of_specific_college = Programs.query.filter_by(college_id=id)
-    college = Colleges.query.get(id)
-    return render_template('all_programs.html',list_of_names=program_of_specific_college,college=college)
+@application.route('/NessCapsules/<int:id>')
+def CustomerAccount(id):
+    capsule_of_specific_customeraccount = CustomerAccounts.query.filter_by(capsule_id=id)
+    NessCapsules = CustomerAccounts.query.get(id)
+    return render_template('all_CustomerAccounts.html',list_of_customeraccount=customer_id_of_specific_CustomerAccount,CustomerAccount=CustomerAccount)
