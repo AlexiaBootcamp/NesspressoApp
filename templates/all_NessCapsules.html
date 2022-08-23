@@ -14,11 +14,11 @@
             </tr>
         </thead>
         <tbody>
-            {% for NessCapsules in list_of_capsule_names %}
+            {% for NessCapsules in list_of_capsules %}
             <tr>
                 <td style="border: 1px solid black">{{NessCapsules.capsule_id}}</td>
                 <td style="border: 1px solid black">{{NessCapsules.capsule_name}}</td>
-                <td style="border: 1px solid black"><a href="{{url_for('CustomerAccounts',id=NessCapsules.capsule_id)}}">Visit</a></td>
+                <td style="border: 1px solid black"><a href="{{url_for('CustomerAccount',id=NessCapsules.capsule_id)}}">Visit</a></td>
             </tr>
             {% endfor %}
         </tbody>

@@ -6,7 +6,7 @@ from schema import *
 
 @application.route('/')
 def root():
-    return render_template('root.html')
+    return render_template('all_roots.html')
 
 @application.route('/NessCapsules')
 def capsule_list():
@@ -17,4 +17,4 @@ def capsule_list():
 def CustomerAccount(id):
     capsule_of_specific_customeraccount = CustomerAccounts.query.filter_by(capsule_id=id)
     NessCapsules = CustomerAccounts.query.get(id)
-    return render_template('all_CustomerAccounts.html',list_of_customeraccount=customer_id_of_specific_CustomerAccount,CustomerAccount=CustomerAccount)
+    return render_template('all_CustomerAccounts.html',list_of_customeraccount=capsule_of_specific_customeraccount,CustomerAccount=CustomerAccount)

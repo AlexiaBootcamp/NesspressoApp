@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>{{college.college_name}}</title>
+    <title>{{CustomerAccounts.customer_name}}</title>
 </head>
 <body>
-    <p>{{college.address}}</p>
-    <p>{{college.director_name}}</p>
-    <p>All programs</p>
+    <p>{{CustomerAccounts.Customer_id}}</p>
+    <p>{{CustomerAccounts.paymethod}}</p>
+    <p>All CustomerAccounts</p>
     <table>
         <thead>
             <tr>
                 <th style="border: 1px solid black">Id</th>
-                <th style="border: 1px solid black">Program Name</th>
-                <th style="border: 1px solid black">Fees</th>
+                <th style="border: 1px solid black">Customer Name</th>
+                <th style="border: 1px solid black">Paymethod</th>
             </tr>
         </thead>
         <tbody>
-            {% for program in list_of_names %}
+            {% for capsule_id in list_of_CustomerAccounts %}
             <tr>
-                <td style="border: 1px solid black">{{program.program_id}}</td>
-                <td style="border: 1px solid black">{{program.program_name}}</td>
-                <td style="border: 1px solid black">{{program.fees}}</td>
+                <td style="border: 1px solid black">{{CustomerAccounts.customer_id}}</td>
+                <td style="border: 1px solid black">{{CustomerAccounts.customer_name}}</td>
+                <td style="border: 1px solid black">{{CustomerAccounts.paymethod}}</td>
             </tr>
             {% endfor %}
         </tbody>
