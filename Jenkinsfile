@@ -1,6 +1,6 @@
 pipeline{
     environment {
-        registry = ""
+        registry = "alexiamicha/nessapp"
         registryCredentials = "dockerhub_id"
         dockerImage = ""
         HOME = "${env.WORKSPACE}"
