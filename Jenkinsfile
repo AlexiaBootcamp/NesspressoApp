@@ -8,11 +8,7 @@ pipeline{
 
     agent any   
         stages {
-            stage ('Testing'){
-                steps{
-                    
-                }
-            }
+       
 
             stage ('Build Docker Image'){
                 steps{
