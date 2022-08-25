@@ -15,7 +15,7 @@ pipeline{
                     sh 'pytest-3 --junitxml results.xml'
                 }
        
-
+            }
             stage ('Build Docker Image'){
                 steps{
                     script {
