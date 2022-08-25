@@ -20,7 +20,7 @@ class TestBase(LiveServerTestCase):
         from app import NessCapsules
         db.create_all() # create schema before we try to get the page
 
-        test_nessapp = NessCapsules(name = "Test")
+        test_nessapp = NessCapsules(capsule_name = "Test")
         db.session.add(test_nessapp)
         db.session.commit()
 
