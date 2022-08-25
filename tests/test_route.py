@@ -3,7 +3,7 @@ from flask_testing import LiveServerTestCase
 from urllib.request import urlopen
 from flask import url_for
 
-from app import app, db
+from app import application, db
 class TestBase(LiveServerTestCase):
     TEST_PORT = 5050 # test port, doesn't need to be open
 
@@ -14,7 +14,7 @@ class TestBase(LiveServerTestCase):
             DEBUG=True,
             TESTING=True
         )
-        return app
+        return application
 
     def setUp(self):
         from app import NessCapsules
