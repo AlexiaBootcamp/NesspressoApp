@@ -8,7 +8,7 @@ class TestBase(LiveServerTestCase):
     TEST_PORT = 5050 # test port, doesn't need to be open
 
     def create_app(self):
-        app.config.update(
+        application.config.update(
             SQLALCHEMY_DATABASE_URI="sqlite:///",
             LIVESERVER_PORT=self.TEST_PORT,            
             DEBUG=True,
@@ -31,6 +31,6 @@ class TestBase(LiveServerTestCase):
 class TestAdd(TestBase):
    
     def test_index_route(self):
-        response = app.test_client().get('/')
+        response = application.test_client().get('/')
 
         assert response.status_code == 200
