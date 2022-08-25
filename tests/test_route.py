@@ -3,7 +3,7 @@ from flask_testing import LiveServerTestCase
 from urllib.request import urlopen
 from flask import url_for
 
-from app import application, db
+from app import application, d
 class TestBase(LiveServerTestCase):
     TEST_PORT = 5050 # test port, doesn't need to be open
 
@@ -18,15 +18,15 @@ class TestBase(LiveServerTestCase):
 
     def setUp(self):
         from app import NessCapsules
-        db.create_all() # create schema before we try to get the page
+        d.create_all() # create schema before we try to get the page
 
         test_nessapp = NessCapsules(capsule_name = "Test")
-        db.session.add(test_nessapp)
-        db.session.commit()
+        d.session.add(test_nessapp)
+        d.session.commit()
 
     def tearDown(self):
-        db.session.remove()
-        db.drop_all()
+        d.session.remove()
+        d.drop_all()
 
 class TestAdd(TestBase):
    
