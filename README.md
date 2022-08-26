@@ -5,7 +5,7 @@ NessApp
 Step #1:
 Create an ERD Diagramm for the Ness App
 
-![](nessapp.drawio.png)
+![](./nessapp.drawio.png)
 
 Step #2:
 Jira Progress
