@@ -12,4 +12,13 @@ Jira Progress
 ![](./JiraScreenShots.png)
 
 Step#3:
-Create a flask app for my app in Visual Studio and added the JenkinsFile, Dockerfile, and testpy files.
+Project Description:Create a website for  orderning online the Coffee Capsules for the Home  Coffee machine called 'Nesspresso'
+
+Step#4:
+Create a website with the flask application called NessApp then turn it to a Docker Container and deploy it by using Docker Compose. 
+
+Step#5:
+Have created three Vitual Machines in order to deploy my code to Docker Compose
+![](./AzureVMs.png)
+DockerSwam1 being the 'manager' and DockerSwam2 being the 'worker'
+
