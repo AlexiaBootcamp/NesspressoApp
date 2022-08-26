@@ -9,7 +9,7 @@ Create an ERD Diagramm for the Ness App
 
 Step #2:
 Jira Progress
-![](./Jira ScreenShots.png)
+![](./JiraScreenShots.png)
 
 Step#3:
 Create a flask app for my app in Visual Studio and added the JenkinsFile, Dockerfile, and testpy files.
