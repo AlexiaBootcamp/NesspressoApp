@@ -1,6 +1,6 @@
 #Schema structure
 
-from app import d
+from application import d
 
 class NessCapsules(d.Model):
     __tablename__ = 'capsules'

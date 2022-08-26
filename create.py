@@ -1,6 +1,6 @@
 # Perform static database operations
-from app import d
-from schema import NessCapsules, CustomerAccounts
+from application import d
+from application.schema import NessCapsules, CustomerAccounts
 
 # Task -1 (only once)
 d.create_all()
