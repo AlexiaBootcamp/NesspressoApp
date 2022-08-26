@@ -23,5 +23,8 @@ Have created three Vitual Machines in order to deploy my code to Docker Compose
 
 DockerSwam1 being the 'manager' and DockerSwam2 being the 'worker'
 
-Step#6: After making sure my NessApp website is launched then i checked whether my pipeline is working
+Step#6: After making sure my NessApp website is launched then checking whether my pipeline is working
 ![](./Pipeline.png)
+
+Step#7:
+Possible improvements: Elaborate my code more in order to have a full crud oparation webflask.This time i have applied agile methodology investing more time on managing to have a fully working Pipeline and have a basic website launched. Definetely i will work more on my website.
