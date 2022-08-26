@@ -20,15 +20,11 @@ class TestBase(LiveServerTestCase):
         from application import NessCapsules
         d.create_all() # create schema before we try to get the page
 
-        test_nessapp = NessCapsules(capsule_name = "Test")
-        d.session.add(test_nessapp)
-        d.session.commit()
-
     def tearDown(self):
         d.session.remove()
         d.drop_all()
 
-class TestAdd(TestBase):
+class TestRoute(TestBase):
    
     def test_index_route(self):
         response = app.test_client().get('/')
