@@ -23,3 +23,5 @@ Have created three Vitual Machines in order to deploy my code to Docker Compose
 
 DockerSwam1 being the 'manager' and DockerSwam2 being the 'worker'
 
+Step#6: After making sure my NessApp website is launched then i checked whether my pipeline is working
+![](./Pipeline.png)
