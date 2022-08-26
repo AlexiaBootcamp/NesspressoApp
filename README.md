@@ -19,7 +19,7 @@ Create a website with the flask application called NessApp then turn it to a Doc
 
 Step#5:
 Have created three Vitual Machines in order to deploy my code to Docker Compose
-![](./AzureVMs.png)
+![](./AzureVMS.png)
 
 DockerSwam1 being the 'manager' and DockerSwam2 being the 'worker'
 
